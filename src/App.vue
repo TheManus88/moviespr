@@ -1,20 +1,9 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import Navbar from "@/components/Layout/Navbar.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
-  </header>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/movies">Movies</RouterLink>
+  <Navbar />
   <main>
     <RouterView />
   </main>
@@ -24,5 +13,9 @@ import TheWelcome from "./components/TheWelcome.vue";
 header {
   display: flex;
   justify-content: center;
+}
+
+main {
+  margin-top: 70px;
 }
 </style>
